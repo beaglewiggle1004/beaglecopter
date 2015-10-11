@@ -1,0 +1,1 @@
+cmd_Release/obj.target/controls.node := flock ./Release/linker.lock g++ -shared -pthread -rdynamic  -Wl,-soname=controls.node -o Release/obj.target/controls.node -Wl,--start-group Release/obj.target/controls/nodewrapper.o -Wl,--end-group /usr/local/lib/libcontrols.so
